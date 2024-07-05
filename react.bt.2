@@ -1,1 +1,21 @@
 
+import './App.css';
+import { useState } from 'react';
+import {button}  from './button.jsx';///em dg bi vuong cai  import  nay  ko nhan file :<<
+
+const Demo=()=> {
+  const [Name,setName]=useState('TienPhat');
+  const changeName=() =>{
+    setName('NguyenTienPhat');
+  }
+  return (
+    <>
+    <h2> Name:{Name}</h2>
+    <button  onClick={changeName}> changeName</button>
+    </>
+
+    
+  );
+}
+
+export default Demo;
